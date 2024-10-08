@@ -1,0 +1,57 @@
+/* Estilos generales para el header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #C4DAD2;
+  position: relative; /* Para que el menú se posicione relativo al header */
+  z-index: 10; /* Asegura que el header esté encima de otros elementos */
+}
+
+/* Estilo del logo */
+.header-title {
+  color: #16423C;
+}
+
+/* Estilo para el menú de navegación */
+.nav-links {
+  display: flex; /* Mostrar botones en pantallas grandes */
+  justify-content: center;
+  gap: 1rem; /* Espaciado entre botones */
+}
+
+.menu-toggle {
+  display: none; /* Oculto por defecto */
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Mostrar el menú de hamburguesa en móviles */
+@media (max-width: 767px) {
+  .menu-toggle {
+    display: block; /* Mostrar el ícono de hamburguesa en móviles */
+  }
+
+  .nav-links {
+    display: none; /* Ocultar botones por defecto */
+    flex-direction: column; /* Hacer que el menú sea vertical al abrir */
+    position: fixed; /* Fijo para que se superponga sobre todos los elementos */
+    top: 0;
+    left: 0;
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    width: 100vw; /* Ocupa todo el ancho de la pantalla */
+    background-color: rgba(248, 249, 250, 0.95); /* Fondo ligeramente transparente */
+    padding: 1rem;
+    z-index: 999; /* Asegura que esté por encima de todos los elementos */
+    gap: 1rem; 
+  }
+
+  nav button {
+    padding: 0.8rem;
+  }
+  .nav-links.open {
+    display: flex; /* Mostrar el menú cuando está abierto */
+  }
+}
