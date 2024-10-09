@@ -1,0 +1,23 @@
+.book-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    width: 200px; /* Ajusta según tus necesidades */
+    position: relative;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem;
+    font-size: small;
+}
+
+    
+.book-image {
+    width: 100%;
+    max-width: 140px;
+    max-height: 180px;
+    margin: 10px;
+}

@@ -6,19 +6,29 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #E9EFEC;
-  color: #333;
+  background-color: #Fafafa;
+  color: #424242;
   line-height: 1.6;
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+
 }
 
+.content {
+  flex: 1;
+  min-height: calc(100vh - 10rem);
+
+} 
+
 h2, h3 {
-  color: #16423C;
+  color: #229799;
 }
 
 button {
-  background-color: #6A9C89;
+  background-color: #48CFCB;
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -27,44 +37,12 @@ button {
   text-align: center; /* Centra el texto dentro del botón */
   transition: background-color 0.3s, transform 0.3s;
   font-weight: bold;
-  margin-left: 0.5rem;
 }
 
 button:hover {
-  background-color: #16423C;
+  background-color: #229799;
   transform: scale(1.05);
   color: #fff;
-}
-
-.cart-list, .book-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    margin: 3% ;
-}
-
-.book-card {
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  width: 200px; /* Ajusta según tus necesidades */
-  position: relative;
-  padding: 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0.5rem;
-  font-size: small;
-}
-  
-.book-image {
-    width: 100%;
-    max-width: 140px;
-    max-height: 180px;
-    margin: 10px;
 }
 
 .modal {
@@ -87,8 +65,8 @@ button:hover {
   
 }
 
-.modal-content p {
-  margin-bottom: 0.5rem;
+.modal button {
+  margin: 0.5rem;
 }
 
 form {
@@ -100,26 +78,9 @@ form {
   margin-bottom: 1rem;
 }
 
-.auth-container {
-  margin-top: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  
-}
-
-.cart {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  
-  
-}
-  
 input {
   border-radius: 5px;
-  border: 1px solid #6A9C89;
+  border: 1px solid #48CFCB;
   height: 1.5rem;
   padding: 10px;
 }
@@ -127,11 +88,12 @@ input {
 a {
   text-decoration: underline;
   cursor: pointer;
-  color: #16423C;
+  color: #229799;
+  height: auto;
 }
 
 a:hover {
-  color: #6A9C89;
+  color: #48CFCB;
 }
 
 @media (max-width: 767px) {
@@ -144,50 +106,19 @@ form button {
   margin: 1rem;
 }
 
-.authpage {
- margin-top: 50%;
+input {
+  height: auto;
 }
 
+h2{
+  text-align: center;
 }
 
 .total-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Order.css */
-.order-card {
-  background-color: #f8f9fa;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 1rem;
   margin: 1rem;
-  width: 250px; /* Ancho de cada card */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  flex: 1 1 250px; /* Cada card ocupa al menos 250px de ancho */
-  max-width: 300px; /* Ancho máximo para evitar cards muy grandes */
-  max-height: 300px;
-  overflow-y: auto; /* Agrega scrollbar vertical si es necesario */
+}
 }
 
-ul {
-  list-style-type: none;
-}
-
-/* MyOrders.css */
-.my-orders {
-  padding: 1rem;
-}
-
-
-.order-list {
-  display: flex;
-  flex-wrap: wrap; /* Permite que las cards se ajusten en filas */
-  gap: 0.5rem; /* Espacio entre las cards */
-  justify-content: center; /* Centra las cards horizontalmente */
-}
-
-.confirmation {
-  padding: 1rem;
+.total-btn{
+  gap: 0.5rem;
 }

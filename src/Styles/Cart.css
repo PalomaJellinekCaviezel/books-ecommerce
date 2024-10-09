@@ -1,0 +1,24 @@
+.cart-list, .book-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0.5% 3% ;
+
+}
+
+.cart {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 4.5rem 0;
+}
+
+.total-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p{
+    text-align: center;
+}

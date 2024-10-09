@@ -1,0 +1,15 @@
+.order-list {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las cards se ajusten en filas */
+    gap: 0.5rem; /* Espacio entre las cards */
+    justify-content: start; /* Centra las cards horizontalmente */
+
+}
+  
+.my-orders {
+    padding: 1rem 4.5rem 0;
+  }
+
+p{
+    text-align: center;
+}

@@ -5,6 +5,7 @@ import Book from "../components/Book";
 import PurchaseConfirmationModal from "../components/PurchaseConfirmationModal";
 import { ref, push } from "firebase/database";
 import { database } from "../firebaseConfig";
+import "../Styles/Cart.css";
 
 const Cart = () => {
   const { state, dispatch } = useContext(CartContext);

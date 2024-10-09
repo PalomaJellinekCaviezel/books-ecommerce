@@ -4,6 +4,7 @@ import { ref, onValue, remove } from "firebase/database"; // Asegúrate de impor
 import { database } from "../firebaseConfig";
 import AuthPage from "./AuthPage"; // Asegúrate de que la ruta es correcta
 import Order from "../components/Order"; // Importa el componente Order
+import "../Styles/MyOrders.css";
 
 const MyOrders = () => {
   const { state } = useContext(CartContext);

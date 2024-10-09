@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Login from "../components/Login"; // Asegúrate de importar tu componente de Login
 import Register from "../components/Register"; // Asegúrate de importar tu componente de Register
+import "../Styles/AuthPage.css";
 
 const AuthPage = () => {
   const [isLogin, setIsLogin] = useState(true); // Estado para alternar entre login y registro

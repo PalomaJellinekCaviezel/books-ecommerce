@@ -2,6 +2,7 @@ import { database } from "../firebaseConfig"; // Importar la base de datos
 import { ref, onValue } from "firebase/database"; // Importar ref y onValue de firebase/database
 import React, { useState, useEffect } from "react";
 import Book from "../components/Book"; // Asegúrate de importar el componente Product
+import "../Styles/Bookstore.css";
 
 const Bookstore = () => {
   const [books, setBooks] = useState([]);

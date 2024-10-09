@@ -1,5 +1,6 @@
 // Order.jsx
 import React from "react";
+import "../Styles/Order.css";
 
 const Order = ({ order }) => {
   return (

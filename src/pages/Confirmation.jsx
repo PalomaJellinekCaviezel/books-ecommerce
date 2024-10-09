@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import { CartContext } from "../context/CartContext"; // Asegúrate de importar tu contexto
 import PurchaseConfirmationModal from "../components/PurchaseConfirmationModal"; // Importa el modal que creaste
 import Book from "../components/Book";
+import "../Styles/Confirmation.css";
 
 const Confirmation = () => {
   const { state, handleCheckout } = useContext(CartContext); // Asegúrate de que handleCheckout esté en el contexto
@@ -27,7 +28,9 @@ const Confirmation = () => {
         <p>No books in your cart.</p>
       ) : (
         <>
-          <h3>Cart Overview</h3>
+          <p>
+            <strong>Cart Overview</strong>
+          </p>
           <div className="total-btn">
             <h3>Total: ${total.toFixed(2)}</h3>
             <button onClick={handleSimulatePurchase}>Buy</button>

@@ -1,7 +1,7 @@
 import { useNavigate, useLocation, Link } from "react-router-dom"; // Asegúrate de importar Link
-import "./Header.css"; // Importa el archivo CSS para el header
-import Logout from "../Logout";
-import { useAuth } from "../../context/AuthContext";
+import "../Styles/Header.css";
+import Logout from "./Logout";
+import { useAuth } from "../context/AuthContext";
 import { useState } from "react";
 
 function Header() {

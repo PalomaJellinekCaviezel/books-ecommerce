@@ -3,22 +3,22 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
-  background-color: #C4DAD2;
+  padding: 0 4.5rem 0;
+  height: 5rem;
+  background-color: #fafafa;
   position: relative; /* Para que el menú se posicione relativo al header */
-  z-index: 10; /* Asegura que el header esté encima de otros elementos */
 }
 
 /* Estilo del logo */
 .header-title {
-  color: #16423C;
+  color: #229799;
 }
 
 /* Estilo para el menú de navegación */
 .nav-links {
   display: flex; /* Mostrar botones en pantallas grandes */
   justify-content: center;
-  gap: 1rem; /* Espaciado entre botones */
+  gap: 2rem; /* Espaciado entre botones */
 }
 
 .menu-toggle {
@@ -32,7 +32,13 @@ header {
 @media (max-width: 767px) {
   .menu-toggle {
     display: block; /* Mostrar el ícono de hamburguesa en móviles */
+    color: #229799;
   }
+
+  header{
+  padding: 2rem 2rem 1rem;
+  }
+
 
   .nav-links {
     display: none; /* Ocultar botones por defecto */
@@ -45,13 +51,27 @@ header {
     background-color: rgba(248, 249, 250, 0.95); /* Fondo ligeramente transparente */
     padding: 1rem;
     z-index: 999; /* Asegura que esté por encima de todos los elementos */
-    gap: 1rem; 
+    gap: 2rem; 
   }
 
-  nav button {
-    padding: 0.8rem;
+  .nav-links.open button{
+    font-size: x-large;
   }
+
   .nav-links.open {
     display: flex; /* Mostrar el menú cuando está abierto */
   }
+}
+
+.nav-links button {
+  background-color: transparent;
+  color: #229799;
+  font-size: medium;
+  padding: 0;
+}
+
+.nav-links button:hover {
+  background-color: transparent;
+  color: #229799;
+  
 }

@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { CartContext } from "../context/CartContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart, faTrash } from "@fortawesome/free-solid-svg-icons";
+import "../Styles/Book.css";
 
 const Book = ({ book }) => {
   const { state, dispatch } = useContext(CartContext);
