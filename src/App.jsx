@@ -10,12 +10,16 @@ import Confirmation from "./pages/Confirmation";
 import MyOrders from "./pages/MyOrders";
 import { AuthProvider } from "./context/AuthContext";
 import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
+import CategoryPage from "./pages/CategoryPage";
+
 function App() {
   return (
     <AuthProvider>
       <CartProvider>
         <BrowserRouter>
           <Header />
+          <Navbar />
           <div className="content">
             <Routes>
               <Route path="/" element={<Bookstore />} />
@@ -25,6 +29,7 @@ function App() {
               <Route path="/authpage" element={<AuthPage />} />
               <Route path="/confirmation" element={<Confirmation />} />
               <Route path="/my-orders" element={<MyOrders />} />
+              <Route path="/category/:category" element={<CategoryPage />} />
             </Routes>
           </div>
 

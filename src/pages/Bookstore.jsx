@@ -48,9 +48,10 @@ const Bookstore = () => {
   }, []);
 
   return (
-    <div>
+    <div className="bookstore">
       {loading && <p>Loading books...</p>}
       {error && <p>{error}</p>}
+      <h2>All books</h2>
       <div className="book-list">
         {books.map((book) => (
           <Book key={book.id} book={book} />

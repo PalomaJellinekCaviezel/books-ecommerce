@@ -1,0 +1,21 @@
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+
+}
+
+
+.link-navbar {
+    text-decoration: none;  
+    color:#229799;    
+    
+}
+
+.category-navbar {
+    height: 2rem;
+    background-color: #fafafa;
+    align-items: center;
+    text-align: center;
+}

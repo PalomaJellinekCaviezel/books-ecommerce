@@ -6,7 +6,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #Fafafa;
+  background-color: #E9EFEC;
   color: #424242;
   line-height: 1.6;
   height: 100%;
@@ -19,7 +19,7 @@ body {
 
 .content {
   flex: 1;
-  min-height: calc(100vh - 10rem);
+  min-height: calc(100vh - 12rem);
 
 } 
 
@@ -121,4 +121,9 @@ h2{
 
 .total-btn{
   gap: 0.5rem;
+}
+
+.category-name {
+  text-align: center;
+  margin: 2rem 0 1rem;
 }
