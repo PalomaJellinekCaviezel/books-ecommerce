@@ -12,7 +12,7 @@ import { AuthProvider } from "./context/AuthContext";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import CategoryPage from "./pages/CategoryPage";
-
+import BookDetails from "./pages/BookDetails";
 function App() {
   return (
     <AuthProvider>
@@ -23,6 +23,7 @@ function App() {
           <div className="content">
             <Routes>
               <Route path="/" element={<Bookstore />} />
+              <Route path="/book/:id" element={<BookDetails />} />{" "}
               <Route path="/cart" element={<Cart />} />
               <Route path="/register" element={<Register />} />
               <Route path="/login" element={<Login />} />

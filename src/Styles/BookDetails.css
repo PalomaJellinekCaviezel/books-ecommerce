@@ -1,0 +1,40 @@
+.details-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Asegura que el contenedor ocupe toda la altura de la pantalla */
+}
+
+  
+.book-card-detail {
+    max-width: 400px;
+    width: 90%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    text-align: center;
+    margin-top: 2rem;
+    cursor: auto;
+}
+  
+.book-details {
+    margin: 1rem;
+}
+  
+h2 {
+    margin: 1rem 0 0.5rem
+}
+  
+
+@media (max-width: 767px) {
+    .content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .book-details{
+        font-size: medium;
+    }
+}
